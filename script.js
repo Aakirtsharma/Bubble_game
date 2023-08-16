@@ -60,6 +60,7 @@ document.querySelector("#reset").addEventListener("click", () => {
     endTimer();
     bubbles();
     endTimer();
+    document.querySelector("#scoreValue").textContent = 0;
 });
 };
 
