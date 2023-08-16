@@ -49,9 +49,11 @@ document.querySelector(".bottom_box").addEventListener("click",function(d){
         increaseScore();
         bubbles();
         getNewNum();
+         document.querySelector("#scoreValue").style.backgroundColor = "#fff";
     }else{
         decreaseScore();
         mySound.play();
+        document.querySelector("#scoreValue").style.backgroundColor = "red";
     }
 });
 };
