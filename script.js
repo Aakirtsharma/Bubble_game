@@ -1,7 +1,7 @@
 var timer = 60;
 var score = 0;
 var hitnum = 0;
-
+let mySound = new Audio('negative_beeps-6008.mp3')
 function increaseScore(){
     score += 10;
     document.querySelector("#scoreValue").textContent = score;
@@ -50,7 +50,8 @@ document.querySelector(".bottom_box").addEventListener("click",function(d){
         bubbles();
         getNewNum();
     }else{
-        decreaseScore()
+        decreaseScore();
+        mySound.play();
     }
 });
 };
